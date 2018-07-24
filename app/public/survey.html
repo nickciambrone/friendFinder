@@ -197,6 +197,8 @@
                 parseInt($("#q9").val().trim()),
                 parseInt($("#q10").val().trim())
             ]
+            var a = parseInt($("#q1").val().trim())
+
             var information = {
                 username: name,
                 userphoto: photo,
@@ -217,7 +219,7 @@
             
             $.post("/api/friends", information).then(function (data) {
                 
-                console.log(data)
+                alert(data)
             })
         })
     </script>
