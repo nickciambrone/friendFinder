@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser=require('body-parser');
 var path=require('path');
 var app=express();
-var PORT = procces.env || 9090;
+var PORT = process.env.PORT || 9090;
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(bodyParser.json({type:'application/*+json'}))
